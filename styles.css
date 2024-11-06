@@ -1,0 +1,111 @@
+/* Estilos Globais */
+body {
+    font-family: 'League Spartan', sans-serif;
+    background-color: #000; /* Cor de fundo uniforme para a página */
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Cabeçalho com logo centralizada e destacada */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.logo {
+    height: 100px; /* Tamanho destacado da logo */
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05); /* Aumenta levemente ao passar o mouse */
+}
+
+/* Caixa de Alerta */
+.alert {
+    background-color: #222;
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 90%;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 20px;
+}
+
+.alert-icon {
+    font-size: 2rem;
+    color: #f73378;
+}
+
+.alert-message h2 {
+    color: #f73378;
+    font-size: 1.5rem;
+}
+
+.alert-message p {
+    color: #1da1f2;
+}
+
+strong {
+    color: #f73378;
+}
+
+/* Botão de Pagamento */
+.pay-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #f73378;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.pay-button:hover {
+    background-color: #ff3366;
+}
+
+/* Rodapé */
+footer {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #aaa;
+    text-align: center;
+}
+
+footer a {
+    color: #aaa;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .alert {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .pay-button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .logo {
+        height: 80px;
+    }
+}

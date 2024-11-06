@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickPay - Saque Adiantado</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cabeçalho com logo centralizada -->
+    <header>
+        <img src="logotik.png" alt="Logo QuickPay" class="logo">
+    </header>
+
+    <!-- Mensagem de Alerta -->
+    <section class="alert">
+        <div class="alert-icon">⚠️</div>
+        <div class="alert-message">
+            <h2>Seu saque foi temporariamente pausado.</h2>
+            <p>O saque está retido devido a uma análise de segurança. A liberação ocorrerá em até <strong>48 horas</strong>. Caso prefira receber imediatamente, opte pela taxa de adiantamento de saque. Todos os valores são reembolsáveis, conforme a Lei do Consumidor.</p>
+        </div>
+        <button class="pay-button" onclick="redirectToPayment()">Pagar Taxa de Adiantamento</button>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <a href="#">Política de Privacidade</a> | 
+        <a href="#">Termos de Uso</a> | 
+        <a href="#">Contato</a> | 
+        <a href="#">Ajuda</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
